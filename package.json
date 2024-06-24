@@ -1,0 +1,24 @@
+{
+  "name": "tw-postcss-starter-template",
+  "version": "1.0.0",
+  "description": "A Simple file structure for TailwindCSS + PostCSS projects",
+  "main": "./src/main.js",
+  "scripts": {
+    "build": "postcss src/input.css -o src/styles/output.min.css",
+    "watch": "postcss src/input.css -o src/styles/output.min.css --watch",
+    "serve": "concurrently \"live-server src --verbose --no-css-inject\" \"npm run watch\"",
+    "prettier": "prettier --write \"./**/*.{html,css,js,json}\""
+  },
+  "author": "JAY (zabe)",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "cssnano": "^7.0.3",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.3.2",
+    "tailwindcss": "^3.4.4"
+  }
+}
